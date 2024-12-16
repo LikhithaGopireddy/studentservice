@@ -2,6 +2,9 @@ package com.example.studentservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 public class StudentServiceApplication {
@@ -10,4 +13,8 @@ public class StudentServiceApplication {
 		SpringApplication.run(StudentServiceApplication.class, args);
 	}
 //sample
+//@Bean
+//public RestTemplate restTemplate(RestTemplateBuilder builder) {
+//	return builder.build();
+//}
 }
