@@ -16,10 +16,6 @@ public class StudentServiceImpl implements StudentService {
     @Autowired
     StudentRepository studentRepository;
 
-//    @Autowired
-//    private RestTemplate restTemplate;
-
-
 
     @Override
     public String addStudent(Student student){
@@ -31,19 +27,5 @@ public class StudentServiceImpl implements StudentService {
         return studentRepository.findAll();
     }
 
-
-//    public String checkAvailability() {
-//        String url = "http://localhost:8080/api/school/registrations"; // School Microservice URL
-//        ResponseEntity<List> response = restTemplate.getForEntity(url, List.class);
-//
-//        int totalSeats = 25;
-//        int registeredSeats = response.getBody().size();
-//
-//        if (registeredSeats >= totalSeats) {
-//            return "Minimum criteria is filled. Registration is closed.";
-//        }  else {
-//            return "Seats left: " + (totalSeats - registeredSeats);
-//        }
-//    }
 
 }

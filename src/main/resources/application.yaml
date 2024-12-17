@@ -14,5 +14,5 @@ spring:
     properties:
       hibernate:
         format_sql: true  # Optional: Format the SQL for readability
-#  server:
-#    port: 8081  # Setting the server port to 8081
+  server:
+    port: 8081

@@ -14,6 +14,11 @@ public class StudentController {
     @Autowired
     StudentService studentService;
 
+    @GetMapping("/healthStatus")
+    public String getHealthStatus() {
+        return "health is up";
+    }
+
     @PostMapping("/add")
     public String addStudent(@RequestBody Student student){
         return studentService.addStudent(student);
@@ -22,8 +27,5 @@ public class StudentController {
     public List<Student> getAllStudents(){
         return studentService.getAllStudents();
     }
-//    @GetMapping("/availability")
-//    public String checkSeatAvailability() {
-//        return studentService.checkAvailability();
-//    }
+
 }
