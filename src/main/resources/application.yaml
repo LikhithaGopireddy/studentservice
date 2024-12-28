@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/schoolDatabase
     username: postgres
-    password: Likhi@321git
+    password: Likhi@321
     driver-class-name: org.postgresql.Driver
     dialect: org.hibernate.dialect.PostgreSQLDialect
     ddl-auto: update  # You can use 'none', 'update', 'create', 'create-drop' based on your needs
